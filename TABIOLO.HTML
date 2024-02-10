@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovaNurse Wellness Institute</title>
+    <style>
+        body {
+            font-family: Cambria, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Ice Infinity Blue */
+            color: #333;
+        }
+
+        header {
+            background-color: #4682b4; /* Steel Blue */
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #87ceeb; /* Sky Blue */
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #add8e6; /* Light Blue */
+            color: black;
+        }
+
+        section {
+            display: none;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #4682b4; /* Steel Blue */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>InnovaNurse Wellness Institute</h1>
+    </header>
+    
+    <nav>
+        <a href="#home" onclick="showSection('home')">Home</a>
+        <a href="#about" onclick="showSection('about')">About Us</a>
+        <a href="#services" onclick="showSection('services')">Services</a>
+        <a href="#staff" onclick="showSection('staff')">Staff</a>
+        <a href="#contact" onclick="showSection('contact')">Contact Us</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to InnovaNurse Wellness Institute</h2>
+        <p>Innovanurse Wellness Institute, established in 2024 at Banga, Aklan, is a collaborative effort of various professional medical practitioners. We are committed to providing accessible, competent, and technology-based health services. The institute has undergone several transformations before attaining its current state.</p>
+        <p>Innovanurse Wellness Institute expanded its offerings to include workshops, retreats, and educational programs to empower individuals with the knowledge and skills to maintain long-lasting wellness. The institute also fostered partnerships with like-minded organizations and experts to broaden its reach and impact.</p>
+        <h2>Our Mission</h2>
+		<p>At InnovaNurse, our mission goes beyond providing medical care. We are dedicated to offering accessible, competent, and technology-driven health services that prioritize the holistic well-being of our community. Through continuous innovation, we have expanded our services to include workshops, retreats, and educational programs, empowering individuals in their pursuit of lasting wellness.Compassion became the guiding principle at Innovanurse Wellness Institute. Our staff members underwent extensive training to cultivate a deep sense of empathy, active listening, and genuine care for each client. Every interaction is infused with warmth and compassion, ensuring that clients feel seen, heard, and supported throughout their wellness journey.</p>
+        <h2>Compassionate Care</h2> 
+		<p>Compassion is the cornerstone of our approach. Every staff member undergoes extensive training to cultivate empathy, active listening, and genuine care. We believe that every individual deserves to be seen, heard, and supported on their wellness journey. At InnovaNurse, every interaction is infused with warmth and compassion, ensuring our clients feel valued and supported.
+	    <p>Join us on this journey toward a healthier and more fulfilling life. InnovaNurse Wellness Institute - Where Health Meets Compassion.</h2> 
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Join our thriving community where wellness is not a destination but a way of life. Whether you're seeking medical assistance, participating in wellness programs, or simply stopping by for a chat, you're not a patient – you're a cherished member of the InnovaNurse family.
+        <h2>Embark on your Wellness Journey</h2>
+		<p>We invite you to embark on a wellness journey that celebrates you – your health, your dreams, and your well-being. At InnovaNurse Wellness Institute, innovation meets care to create a space where your healthiest, happiest self can flourish.
+        
+		<p>Come, be a part of something extraordinary. Welcome to InnovaNurse, where your well-being is our passion.
+    </section>
+
+    <section id="staff">
+        <h2>Staff</h2>
+		<p> Chief Medical Officer- Jireh Grace Antoni
+		
+        <p> Director of Public Assistance and Complaints- Mary Joann Cleope
+
+        <p> Finance Director- Jewel Xasha Rmaneses 
+        <p> Nursing Service:
+        <p> Director of Nursing Operations- John Lloyd Felipe 
+        <p> Central Sterile Services Manager- Kristine R. Encinares 
+        <p> Obstetric Nursing Unit Manager- Ma. Jhoanna Faye I. Dela Vega
+        <p> Pulmonary Unit Nurse Manager- Emsie B. Tabia
+        <p> Medical Services:
+        <p> Outpatient Division Director- Kyla S. Relator 
+        <p> Emergency Medical Division  Director- Sophia E. Villaruel
+        <p> Director of Special Care Services- Rhea Lyn P. Implica
+        <p> Clinical Department:
+        <p> Director of Internal Medicine- Akio T. Oquendo
+        <p> Women's Health Services Director- Gabriela Angel B. Resco
+        <p> Director of Surgical Services- Rey Mark Tabiolo
+        <p> Health Information Management Director- Louist Jay B. Dela Vega    
+	</section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Primary Care Services</li>
+            <li>Specialized Medical Treatments</li>
+            <li>Wellness Programs</li>
+            <li>Nutritional Counseling</li>
+            <li>Rehabilitation Services</li>
+            <li>Mental Health Support</li>
+            <li>Community Outreach Programs</li>
+        </ul>    
+	</section>
+
+     <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries, you can reach us through:</p>
+        <ul>
+            <li>Facebook: <a href="https://www.facebook.com/InnovaNurseWellness" target="_blank">InnovaNurse Wellness</a></li>
+			<li>E-mail: nurseinnova@gmail.com</li>
+            <li>Telephone: 6435-876</li>
+        </ul>
+    </section>
+
+    <footer>
+        All rights reserved 2024
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
